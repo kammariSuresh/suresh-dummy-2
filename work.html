@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="/assets/global.css" rel="stylesheet" />
+    <link href="/assets/responsive.css" rel="stylesheet" />
+    <link href="/assets/nav.css" rel="stylesheet" />
+    <link href="/assets/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .navbar {
+            background-color: #fff;
+        }
+
+        .logo {
+            color: #1C1D20;
+        }
+
+        .nav-links a {
+            color: #1C1D20;
+        }
+
+        .nav-links.active a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <nav class="navbar">
+                <div class="logo-container" style="position: relative;">
+                    <a href="/home.html" class="logo hover-this">Suresh</a>
+                </div>
+                <ul id="navLinkSidebar" class="nav-links nav-links-sty  ">
+                    <li class=""><a class="hover-this" href="/about.html">About</a></li>
+                    <li class=""><a class="hover-this" href="/work.html">Work</a></li>
+                    <li class=""><a class="hover-this" href="/contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger menu-container">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <div id="menu-nav" class="menu-nav-class">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </nav>
+        </header>
+
+
+        <section id="section2" class="ptb-100">
+            <div class="system-width">
+                <h2 class="hover-this">
+                    <!-- I'm a passionate UI developer with expertise in creating visually appealing, user-friendly interfaces. 
+           My focus is on crafting seamless, responsive designs that enhance user experiences. -->
+                    Design & Development of a modern, responsive web application
+                    with a focus on performance and usability.
+                </h2>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="">
+            <div class="system-width pb-100">
+
+                <div class=" btn-layout-controls mb-5 ">
+                    <div>
+                        <!-- <a class="btn btn-work hover-this" >About</a> -->
+                    </div>
+
+                    <div class="layout-controls text-right">
+                        <button id="listViewBtn" class="btn btn-work hover-this" onclick="showListView()">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-view-list"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2m0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14" />
+                            </svg>
+                        </button>
+                        <button id="gridViewBtn" class="btn btn-work hover-this" onclick="showGridView()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-columns-gap"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="">
+                    <h5 class="work_heading">Recent Projects</h5>
+                    <div id="projects" class="grid-view">
+                        <div class="project-card list_item_main">
+                            <div class="hover_main_container poject-card-img">
+                                <img class="hover-img hover-this" src="/assets/images/em-gluten-img.png" alt="">
+                            </div>
+                            <div class="project-content">
+                                <img class="project-image" src="/assets/images/em-gluten-img.png" alt="">
+                                <div class="project-details">
+                                    <h3>Project 1</h3>
+                                    <p>Design & Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card list_item_main">
+                            <div class="hover_main_container poject-card-img">
+                                <img class="hover-img hover-this " src="/assets/images/em-gluten-img.png" alt="">
+                            </div>
+                            <div class="project-content">
+                                <img class=" project-image" src="/assets/images/em-gluten-img.png" alt="">
+                                <div class="project-details">
+                                    <h3>Project 2</h3>
+                                    <p>Design & Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card list_item_main">
+                            <div class="hover_main_container poject-card-img">
+                                <img class="hover-img hover-this" src="/assets/images/em-gluten-img.png" alt="">
+                            </div>
+                            <div class="project-content">
+                                <img class="project-image" src="/assets/images/em-gluten-img.png" alt="">
+                                <div class="project-details">
+                                    <h3>Project 3</h3>
+                                    <p>Design & Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card list_item_main">
+                            <div class="hover_main_container poject-card-img">
+                                <img class="hover-img hover-this" src="/assets/images/em-gluten-img.png" alt="">
+                            </div>
+                            <div class="project-content">
+                                <img class="project-image" src="/assets/images/em-gluten-img.png" alt="">
+                                <div class="project-details">
+                                    <h3>Project 4</h3>
+                                    <p>Design & Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="text-center ptb-100 mt-5 mb-5">
+                        <a href="" class="btn btn-work hover-this ">
+                            More Work
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div></div>
+        </section>
+
+
+        <footer>
+            <div class="footer-container  ">
+                <div class="system-width">
+                    <div class="work-together-cont">
+                        <h3>Let’s work together</h3>
+
+                        <div class="footer-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="ptb-100 mt-50 get_touch">
+                        <div class="get-in-touch hover-this">
+                            <a href="#" class="hover-this">Contact</a>
+                        </div>
+                        <div class="border-solid mt-5"></div>
+
+                    </div>
+
+                    <div class="">
+                        <a href="" class="btn btn-mail hover-this">sureshchary360@gmail.com</a>
+                    </div>
+
+                    <div class="pt-50 footer-social">
+
+                        <div class="social-item">
+                            <p class="text-right">Social</p>
+                            <div class="social-each-item">
+                                <a href="" class=""> LinkedIn</a>
+                                <a href="" class=""> Instagram</a>
+                                <a href="" class=""> Twitter</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- <div class="cursor"></div> -->
+
+    </main>
+
+    <div class="cursor"></div>
+
+
+
+    <script>
+        function showListView() {
+            const projects = document.getElementById('projects');
+            projects.classList.remove('grid-view');
+            projects.classList.add('list-view');
+        }
+
+        function showGridView() {
+            const projects = document.getElementById('projects');
+            projects.classList.remove('list-view');
+            projects.classList.add('grid-view');
+        }
+
+        // Ensure grid view is the default on smaller screens
+        function enforceGridView() {
+            const projects = document.getElementById('projects');
+            if (window.innerWidth <= 1024) {
+                projects.classList.remove('list-view');
+                projects.classList.add('grid-view');
+            }
+        }
+
+        // Enforce grid view on load and on resize
+        window.addEventListener('load', enforceGridView);
+        window.addEventListener('resize', enforceGridView);
+
+
+    </script>
+
+    <script src="/assets/style.js"></script>
+</body>
+
+</html>
